@@ -12,10 +12,7 @@ from Manager import Manager
 
 # run
 def main():
-    factories = [
-        DefaultFactory(DefaultCubeHandler),
-        MagicFactory(MagicCubeHandler)
-    ]
+    factories = [DefaultFactory(DefaultCubeHandler), MagicFactory(MagicCubeHandler)]
 
     storage = MemoryStorage()
 

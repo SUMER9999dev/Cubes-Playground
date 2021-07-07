@@ -14,7 +14,7 @@ logger = logging.getLogger("Manager")
 
 
 # manager
-class Manager():
+class Manager:
     def __init__(self, cube_factories: list[IFactory], cube_storage: IStorage):
         self.__factories = cube_factories
         self._storage = cube_storage

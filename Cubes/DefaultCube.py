@@ -28,7 +28,7 @@ class DefaultCubeHandler(ICubeHandler):
             self.on_die.notify(self._owner)
             return
 
-        self._owner.health -= (damage - 1)
+        self._owner.health -= damage - 1
 
     @property
     def on_die(self) -> IEvent:

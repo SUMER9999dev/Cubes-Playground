@@ -18,9 +18,7 @@ class MagicCubeHandler(ICubeHandler):
 
     def on_attack(self, enemy: ICube) -> None:
         fireball_damage = randint(10, 25)
-        logger.debug(
-            f'Created fireball with damage {fireball_damage} for {enemy}.'
-        )
+        logger.debug(f"Created fireball with damage {fireball_damage} for {enemy}.")
 
         enemy.handler.on_damage(fireball_damage)
 
@@ -31,7 +29,7 @@ class MagicCubeHandler(ICubeHandler):
             self.on_die.notify(self._owner)
             return
 
-        logger.debug(f'healing for {heal} hp.')
+        logger.debug(f"healing for {heal} hp.")
 
         self._owner.health -= damage - heal
 
@@ -42,9 +40,7 @@ class MagicCubeHandler(ICubeHandler):
 
 # cube
 class MagicCube(ICube):
-    def __init__(
-        self, health: int, magic_power: int
-    ) -> None:
+    def __init__(self, health: int, magic_power: int) -> None:
         super().__init__(health)
         self.__magic_power = magic_power
 

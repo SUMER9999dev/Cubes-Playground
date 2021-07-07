@@ -4,9 +4,7 @@ from abc import ABC, abstractmethod
 
 # interface
 class ICube(ABC):
-    def __init__(
-        self, health: int
-    ) -> None:
+    def __init__(self, health: int) -> None:
         """
         Just constructor
 
