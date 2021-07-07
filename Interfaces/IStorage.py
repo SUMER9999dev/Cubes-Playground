@@ -11,7 +11,7 @@ class IStorage(ABC):
         """
         Just constructor
 
-        :param base_cubes -> list[ICube]: default cubes to storage
+        :param base_cubes -> Optional[list[ICube]]: default cubes to storage
         """
 
     @abstractmethod
