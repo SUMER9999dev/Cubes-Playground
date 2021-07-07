@@ -1,12 +1,13 @@
 # import's
 from abc import ABC, abstractmethod
+from typing import Optional
 
 from Interfaces.ICube import ICube
 
 
 # interface
 class IStorage(ABC):
-    def __init__(self, base_cubes: list[ICube] = []) -> None:
+    def __init__(self, base_cubes: Optional[list[ICube]] = None) -> None:
         """
         Just constructor
 
